@@ -33,4 +33,21 @@ void main(List<String> arguments) {
   print(numero1.isOdd);
   print(numero2.isOdd);
 
+  print("Retorna se o número é finito");
+  print(numero1.isFinite);
+
+  print("Retorna se o número é infinito");
+  print(double.infinity);
+
+  print("Retorna se o número não é um numero válido");
+  print(numero1.isNaN);
+
+  print("Retorna se o número é negativo");
+  print((numero1 * -1).isNegative);
+
+  print("Converte String para inteiro");
+  print(int.parse("10"));
+  // print(int.parse("teste")); // Erro na conversão
+  print(int.tryParse("teste")); // Se não conseguir fazer a conversão retorna null
+
 }
